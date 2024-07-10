@@ -8,7 +8,7 @@ function start_timer(){
     state=false
     myInterval = setInterval(myTimer, 10)
     start = document.getElementById('btn1')
-    start.diabled = true
+    start.disabled = true
 }
 
 function myTimer(){
@@ -47,5 +47,5 @@ function clear_timer(){
     document.getElementById('result').innerHTML = 
     `<h1>`+String(z).padStart(2,'0')+':'+String(y).padStart(2,'0')+':'+String(x).padStart(2,'0')+`</h1>`
     start = document.getElementById('btn1')
-    start.diabled = true
+    start.disabled = false
 }
